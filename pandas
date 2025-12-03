@@ -1,0 +1,16 @@
+import pandas as pd
+
+# Sample data
+data = {
+    'product': ['C', 'B', 'A'],
+    'rating': [4.5, 3.8, 4.9]
+}
+
+# Create DataFrame
+df = pd.DataFrame(data)
+
+# Sort by 'rating' in descending order
+sorted_df = df.sort_values(by="rating", ascending=False)
+
+# Show top rows
+print(sorted_df.head())
